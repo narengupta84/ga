@@ -1,0 +1,14 @@
+name: Github Actions Example
+
+on: push
+
+jobs:
+  hello-world:
+    name: run bash command
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print hello world
+        run: |
+          echo 'hello world'
+          date
